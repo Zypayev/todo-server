@@ -16,9 +16,7 @@ const submit = () => {
 }
 
 const deleteTask = (id) => {
-    if (confirm('Are you sure?')) {
-        router.delete(`/tasks/${id}`)
-    }
+    router.delete(`/tasks/${id}`)
 }
 
 // New function: Update the task status
@@ -65,12 +63,14 @@ const logout = () => {
                     </button>
                 </li>
             </ul>
-        </div>
-        <div class="max-w-md mx-auto mt-6 flex justify-end gap-4">
-            <button @click="profile">Profile</button>
-        </div>
-        <div class="max-w-md mx-auto mt-6 flex justify-end gap-4">
-            <button @click="logout">Logout</button>
+            <div class="mt-8 flex justify-between">
+                <button @click="profile" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition">
+                    Profile
+                </button>
+                <button @click="logout" class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition">
+                    Logout
+                </button>
+            </div>
         </div>
     </div>
 </template>

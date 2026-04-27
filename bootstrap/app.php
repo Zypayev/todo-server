@@ -14,6 +14,8 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->web(append: [
             \App\Http\Middleware\HandleInertiaRequests::class,
         ]);
+        $middleware->redirectUsersTo('/tasks');
+        $middleware->redirectGuestsTo('/register');
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //

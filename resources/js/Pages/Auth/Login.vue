@@ -32,6 +32,9 @@ const submit = () => {
                 <button class="w-full bg-gray-200 text-gray-700 py-2 rounded-md hover:bg-gray-300 transition mt-2">
                     <a href="/register">Don't have an account? Register</a>
                 </button>
+                <a href="/" class="w-full text-center text-blue-600 hover:text-blue-800 font-semibold transition mt-4 block">
+                    Go To Main Page
+                </a>
             </form>
         </div>
     </div>

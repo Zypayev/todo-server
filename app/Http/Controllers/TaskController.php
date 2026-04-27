@@ -42,9 +42,4 @@ class TaskController extends Controller
         $task->delete();
         return redirect('/tasks');
     }
-
-    public function profile()
-    {
-        return Inertia::render('Profile');
-    }
 }
